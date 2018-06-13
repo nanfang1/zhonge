@@ -16,7 +16,17 @@
 			<script src="js/ui.js"></script>
 			<script src="js/count.js"></script>
 			<script src="js/modal.js"></script>
-
+<style>
+.container {
+  display: table;
+}
+.inner {
+  display: table-cell;
+  vertical-align:middle;
+  text-align:center;
+  line-height: 4rem;
+}
+</style>
 		</head>
 	</head>
 	<div class="container-fluid inf-wrapper">
@@ -113,21 +123,28 @@
 					<span class="glyphicon glyphicon-menu-right"></span>
 				</div>
 			</a>
+			
+<div class="container">
+  <div class="inner">
+  you own content
+  </div>
+</div>
 			<div class="row row-buttom">
 
 			</div>
 			<div class="row navbar-fixed-bottom order">
+					
 				<div class="col-xs-8 center-vertical ">
-					<div id="inpT">
-						<div id="inpl" class="reduce" onClick="setAmount.reduce('#qty_item_1')" onselectstart="return false;">-</div>
-						<input placeholder="" name="qty_item_1" value="1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')">
+					<div id="inpT" >
+						<div id="inpl" class=" reduce" onClick="setAmount.reduce('#qty_item_1')" onselectstart="return false;">-</div>
+						<input class="" placeholder="" name="qty_item_1" value="1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')">
 						<div class="add" id="inpr" onClick="setAmount.add('#qty_item_1')" onselectstart="return false;">+</div>
 					</div>
 				</div>
 				<div class="col-xs-4 btn btn-default active focus" style="padding: 1.2rem;border-radius: 0rem;" onclick="_confirm1();return false">
 					立即订购
 				</div>
-			</div>
+				</div>
 			
 		</div>
 	</div>
