@@ -239,7 +239,6 @@ a:active {
 	overflow: hidden;
 	width: 100%;
 	border: 1px solid #CCC;
-	display: table;
 }
 
 #inpl {
@@ -277,9 +276,9 @@ a:active {
 
 /*元素垂直居中对齐*/
 .center-vertical {
-	position: relative;
+	position: absolute;
 	top: 50%;
-	transform: translateY(20%);
+	transform: translateY(-50%);
 }
 
 
