@@ -117,7 +117,7 @@ a:active {
 #progress {
 	/*  border:1px solid;*/
 	height: 100%;
-	width: 50%;
+	width: 100%;
 	background: #4dd0c8;
 	border-radius: 5px;
 	z-index: -1;
@@ -132,12 +132,15 @@ a:active {
 	padding-left: .7rem;
 	padding-right: 0rem;
 }
-
+.gly-time{
+	color: lightgreen; top: 2px;
+}
 .row-cj {
 	margin-top: 2rem;
 	padding: 2.5rem 0rem 2.5rem;
 	border-top: 1px solid lightgrey;
 	border-bottom: 1px solid lightgrey;
+	position: relative;
 }
 
 .progressbar {
@@ -272,8 +275,15 @@ a:active {
 	border-left-color: #CCC;
 	float: right;
 }
-
-
+.order-ok{
+	padding: 1.2rem;border-radius: 0rem;
+}
+.row-null{
+	padding: 3rem 0rem; background-color: #F6F6F6;
+}
+.row-box-5{
+	padding: 1.5rem 0rem; background-color:#999999 ;text-align: center;
+}
 /*元素垂直居中对齐*/
 .center-vertical {
 	position: absolute;
