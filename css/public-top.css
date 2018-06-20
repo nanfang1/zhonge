@@ -1,0 +1,101 @@
+/*返回---众筹项目*/
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:link {
+	text-decoration: none;
+	/* 指正常的未被访问过的链接*/
+	color: #000000;
+}
+
+a:visited {
+	text-decoration: none;
+	/*指已经访问过的链接*/
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	/*指鼠标在链接*/
+	color: #000000;
+}
+
+a:active {
+	text-decoration: none;
+	/* 指正在点的链接*/
+	color: #000000;
+}
+a.prev {
+	text-decoration: none;
+	color: #ccc;
+}
+
+a.prev:link {
+	text-decoration: none;
+	/* 指正常的未被访问过的链接*/
+	color: #ccc;
+}
+
+a.prev:visited {
+	text-decoration: none;
+	/*指已经访问过的链接*/
+	color: #ccc;
+}
+
+a.prev:hover {
+	text-decoration: none;
+	/*指鼠标在链接*/
+	color: #ccc;
+}
+
+a.prev:active {
+	text-decoration: none;
+	/* 指正在点的链接*/
+	color: #ccc;
+}
+
+.inf-wrapper {
+	padding: 0 !important;
+}
+.prev {
+	color: #ccc;
+	display: inline-block;
+	border-left: 0.1rem solid;
+	border-bottom: 0.1rem solid;
+	width: 1.5rem;
+	height: 1.5rem;
+	transform: rotate(45deg);
+}
+
+.inf-wrapper .fix {
+	background-color: white;
+}
+
+.inf-nav .nav-head {
+	position: relative;
+	text-align: center;
+	height: 4rem;
+}
+
+.inf-nav .nav-head .prev {
+	left: 1rem;
+}
+
+.inf-nav .nav-head h4 {
+	margin: 0;
+	line-height: 4rem;
+}
+
+.center-vertical1 {
+	position: absolute;
+	top: 33%;
+	/*transform: translateY(-50%);*/
+}
+.center-vertical {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}

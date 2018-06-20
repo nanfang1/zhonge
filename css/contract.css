@@ -1,0 +1,36 @@
+.top {
+	margin-top: 4rem;
+	background-color: #f2f2f2;
+	padding: 0rem 1rem;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+h3.h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 3rem 0;
+	font-size: 2rem;
+	font-weight: 700;
+}
+.h5{
+	font-weight: 700;
+}
+.number {
+	padding-right: 0;
+	padding-bottom: 1rem;
+}
+.nopadding{
+	padding: 0;
+}
+p{
+	text-indent: 2rem;
+}
+.bot-line {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #333;
+}

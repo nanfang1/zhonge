@@ -1,0 +1,119 @@
+html,
+body {
+	height: 100%;
+	background-color: #F2F2F2;
+}
+
+.top {
+	margin-top: 4.2rem;
+	background-color: #f2f2f2;
+	padding: 0rem;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+h3.h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 3rem 0;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.h5 {
+	font-weight: 700;
+}
+
+.number {
+	padding-right: 0;
+	padding-bottom: 1rem;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+p {
+	text-indent: 2rem;
+}
+
+.bot-line {
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 1px solid #333;
+}
+
+.center-vertical {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	outline: none;
+	/*border: 0rem;*/
+	background-color: #4DD0C8;
+	color: white;
+	border: 0rem;
+	box-shadow: none;
+}
+
+.sum {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: white;
+	/*margin: 1rem 0rem;*/
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.sum:nth-child(2) {
+	border-top: 1px solid #DDDDDD;
+}
+
+.sum:first-child {
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	margin: 1rem 0rem;
+}
+
+.box1 {
+	padding-left: 0rem;
+	padding-right: .5rem;
+}
+
+input:focus {
+	outline: none;
+}
+
+input {
+	border: none;
+}
+
+.time1 a {
+	margin: 0rem auto;
+	width: 95%;
+	color: white;
+	display: block;
+	text-align: center;
+	padding: 1rem 0rem;
+	background-color: #4DD0C8;
+	border-radius: .5rem;
+	margin-top: 3rem;
+}
+/*选择框样式*/
+#bankname,#province,#city{
+	border: none;width: 100%;
+	direction: left;
+	outline: none;
+}
+.box2{
+	padding-left: 19px;
+}

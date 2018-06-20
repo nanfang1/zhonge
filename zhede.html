@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>菜单--垂直收缩</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+    	.VerticalMenu{
+    height:100%;
+    width:200px;
+    cursor:pointer;
+
+    &>div{
+        width:200px;
+        float:left;
+        &>div:first-child{
+            text-align:center;
+            height:40px;
+            background-color:white;
+            line-height:40px;
+            padding-right:10px;
+            border-bottom: 1px solid  #cdb0b0;
+            transition:background-color 0.4s linear;
+            &:hover{
+                background-color:#33B9FF;
+            }
+            &>i:last-child{
+                line-height:40px;
+                float:right;
+                transform:rotate(0deg);
+                transition:transform 0.4s linear;
+            }
+        }
+        &>div:last-child{
+            width:200px;
+            display:none;
+            &>div{
+                background-color:white;
+                transition:background-color 0.1s linear;
+                text-align:center;
+                line-height:40px;
+                border-bottom:1px solid #e6e6e6;
+                &:hover{
+                    background-color:#33B9FF!important;
+                }
+            }
+        }
+    }
+    &>div:first-child{
+        &>div:first-child{
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+        }
+    }
+    &>div:last-child{
+        &>div:first-child{
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+        }
+        &::after{
+            display:block;
+            clear:both;
+        }
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="VerticalMenu">
+            <div>
+                <div><span>菜单一</span><i class="glyphicon glyphicon-chevron-right"></i></div>
+                <div name="menu">
+                    <div>
+                        <div><span>选项一</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项一</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项一</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div><span>菜单二</span><i class="glyphicon glyphicon-chevron-right"></i></div>
+                <div name="menu">
+                    <div>
+                        <div><span>选项二</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项二</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项二</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div><span>菜单三</span><i class="glyphicon glyphicon-chevron-right"></i></div>
+                <div name="menu">
+                    <div>
+                        <div><span>选项三</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项三</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项三</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div><span>菜单四</span><i class="glyphicon glyphicon-chevron-right"></i></div>
+                <div name="menu">
+                    <div>
+                        <div><span>选项四</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项四</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项四</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div><span>菜单五</span><i class="glyphicon glyphicon-chevron-right"></i></div>
+                <div name="menu">
+                    <div>
+                        <div><span>选项五</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项五</span></div>
+                    </div>
+                    <div>
+                        <div><span>选项五</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js">	</script>
+</body>
+
+</html>

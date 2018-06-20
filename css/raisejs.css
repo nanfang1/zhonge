@@ -1,0 +1,55 @@
+.top {
+	margin-top: 4rem;
+}
+
+.details {
+	line-height: 3rem;
+}
+
+.table-style {
+	margin: 0rem auto 0rem auto;
+}
+
+table,
+table tr th,
+table tr td {
+	border: 1px solid #dedede;
+}
+
+
+/*.table-style>tbody>tr>td {
+	text-align: center;
+	vertical-align: middle!important;
+	width: 25%;
+	padding: 1rem 0rem;
+}*/
+
+.table-style>tbody>tr>td:nth-child(odd) {
+	background: #f8f8f9;
+}
+
+.table>tbody>tr:first-child~tr>td,
+.table:last-child>tbody>tr>td {
+	text-align: center;
+	vertical-align: middle!important;
+	width: 25%;
+	padding: 1rem 0rem;
+}
+.tableone>tbody tr:first-child>td{
+	text-align: center;
+}
+.tabletwo>tbody tr:first-child>td{
+	text-align: center;
+}
+.jianjie{
+	margin: 2rem 0rem;
+}
+img{
+	margin: 0rem auto;
+}
+#null{
+	padding: 4rem;
+}
+p{
+	color: #737373;
+}

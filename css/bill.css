@@ -1,0 +1,73 @@
+.center-vertical {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	outline: none;
+	/*border: 0rem;*/
+	background-color: #4DD0C8;
+	color: white;
+	border: 0rem;
+	box-shadow: none;
+}
+
+.time {
+	padding-top: 3.5rem;
+	padding-bottom: 1.5rem;
+	position: relative;
+	font-size: 1.7rem;
+}
+
+.nopaddingleft {
+	padding-left: 0rem;
+}
+
+.data {
+	padding-left: 0rem;
+	left: 20%;
+}
+
+.btn-mx {
+	left: 75%;
+	padding-left: 0rem;
+	text-align: center;
+	padding-right: 0rem;
+}
+
+.sum {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background-color: white;
+}
+.sum1 .text-right{
+	color: #d0000e;
+}
+.sum2{
+	border-top: 1px solid #DEDEDE; margin-bottom: 1rem;
+}
+.sum3{
+	border-top: 1px solid #DEDEDE;
+}
+.sum4{
+	border-top: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+}
+/*饼图*/
+
+
+.inner {
+	width: 100%;
+	text-align: center;
+	font-size: 32px;
+	
+}
+
+#easysector {background-color: white;}
+p{text-indent: 0;}
