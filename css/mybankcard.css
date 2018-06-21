@@ -96,7 +96,9 @@ input:focus {
 input {
 	border: none;
 }
-
+a.verification{
+	color: #4DD0C8;
+}
 .time1 a {
 	margin: 0rem auto;
 	width: 95%;

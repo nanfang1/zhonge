@@ -1,0 +1,50 @@
+html,
+body {
+	height: 100%;
+	background-color: #F2F2F2;
+}
+
+.top {
+	margin-top: 4.2rem;
+	background-color: #f2f2f2;
+}
+
+div.modify {
+	position: relative;
+}
+
+.center-vertical {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.top .row .row {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.top .row .row p {
+	margin-bottom: 0rem;
+	text-indent: 2rem;
+	color: #9b9b9b;
+}
+
+.sum {
+	background-color: white;
+	border: 1px solid #CCCCCC;
+	border-radius: .5rem;
+}
+
+.top .row {
+	padding: 2rem 0rem;
+}
+
+.top .row .sum {
+	position: relative;
+}
+.top .row .row:nth-child(3) h3{
+	margin-top: 0rem;
+	margin-bottom: 2rem;
+	text-indent: 3rem;
+}
