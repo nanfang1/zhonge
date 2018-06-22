@@ -17,7 +17,21 @@
 	border: 0rem;
 	box-shadow: none;
 }
-
+.top{
+	padding-bottom: 5rem;
+}
+.footer{
+	background-color:#F2F2F2;
+	z-index: 2;
+}
+#dateSelector{
+	width: 100%;
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
+}
+.footer a{
+	padding: 1rem 0rem 1rem;
+}
 .time {
 	padding-top: 3.5rem;
 	padding-bottom: 1.5rem;

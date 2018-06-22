@@ -57,7 +57,7 @@
 			_this.initPosition = config.position || [];
 			_this.titleText = config.title || '';
 			_this.connector = config.connector || ' ';
-			_this.triggerDisplayData = !(typeof(config.triggerDisplayData)=='undefined') ? config.triggerDisplayData : true;
+			_this.triggerDisplayData = !(typeof(config.triggerDisplayData)=='undefined') ? config.triggerDisplayData : false;
 			_this.trigger.style.cursor='pointer';
 			_this.setStyle(config);
 			_this.setTitle(_this.titleText);

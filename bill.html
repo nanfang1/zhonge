@@ -10,7 +10,12 @@
 		<link rel="stylesheet" type="text/css" href="css/public-top.css" />
 		<link rel="stylesheet" type="text/css" href="css/contract.css" />
 		<link rel="stylesheet" type="text/css" href="css/bill.css" />
+		<link rel="stylesheet" type="text/css" href="css/Mdate.css" />
 		<script src="js/jquery.min.js"></script>
+		<!--选择时间js-->
+		<script src="js/iScroll.js"></script>
+		<script src="js/Mdate.js"></script>
+		<!--饼图js-->
 		<script src="js/jquery.easysector.1.0.0.js"></script>
 	</head>
 
@@ -26,26 +31,28 @@
 		<div class="container-fluid top">
 			<div class="row time">
 				<div class="col-xs-3 center-vertical nopaddingleft">
-					2018/06
+					<input type="text" id="dateSelector" placeholder="2018-6" readonly="readonly">
 				</div>
 				<div class="col-xs-2 center-vertical data">
-					<span class="center-vertical glyphicon glyphicon-calendar"></span>
+					<a href="#" id="dateShowBtn"><img src="image/data.png" /></a>
 				</div>
 				<a href="#" class="center-vertical col-xs-3 col-xs-push-4 btn active focus btn-mx">
 					查看明细
 				</a>
+				<!--<input type="text" id="dateSelector" placeholder="2018-6" readonly="readonly">
+				<a id="dateShowBtn"><img src="image/data.png"/></a>-->
 			</div>
 			<div class="row sum sum1">
 				<div class="col-xs-6">
-					<span>6月</span>总众筹(元)
+					<span id="yue">6月</span>总众筹(元)
 				</div>
-				<div class="col-xs-6 text-right " >
+				<div class="col-xs-6 text-right ">
 					0.00
 				</div>
 			</div>
 			<div class="row">
 				<div id="easysector">
-					
+
 				</div>
 			</div>
 			<div class="row sum sum2">
@@ -56,31 +63,31 @@
 					<span>0</span>名
 				</div>
 			</div>
-			<div class="row sum sum3" >
+			<div class="row sum sum3">
 				<div class="col-xs-6">
-					<span>六月众筹收益(元)</span>
+					<span class="yue">六月</span>众筹收益(元)
 				</div>
 				<div class="col-xs-6 text-right">
 					<span>0.00</span>
 				</div>
 			</div>
-			<div class="row sum sum3" >
+			<div class="row sum sum3">
 				<div class="col-xs-6">
-					<span>六月续投奖励(元)</span>
+					<span class="yue">六月</span>续投奖励(元)
 				</div>
 				<div class="col-xs-6 text-right">
 					<span>0.00</span>
 				</div>
 			</div>
-			<div class="row sum sum3" >
+			<div class="row sum sum3">
 				<div class="col-xs-6">
-					<span>六月站岗资金补助(元)</span>
+					<span class="yue">六月</span>站岗资金补助(元)
 				</div>
 				<div class="col-xs-6 text-right">
 					<span>0.00</span>
 				</div>
 			</div>
-			<div class="row sum sum4" >
+			<div class="row sum sum4">
 				<div class="col-xs-6">
 					<span>提现手续费(元)</span>
 				</div>
@@ -88,15 +95,16 @@
 					<span>0.00</span>
 				</div>
 			</div>
+		</div>
+		<div class="container-fluid navbar-fixed-bottom footer">
 			<div class="row time">
-				<a href="#" class="center-vertical col-xs-12 btn active focus" style="padding: 1rem 0rem 1rem;">
+				<a href="#" class="center-vertical col-xs-12 btn active focus">
 					马上赚取
 				</a>
 			</div>
 		</div>
-
-		</div>
 		<script>
+			
 			var h_items = new Array();
 			h_items[0] = {
 				"h_title": "车辆",
@@ -125,6 +133,27 @@
 				"h_titlesize": 24,
 				"h_Radii": 125,
 				"h_infosize": 16
+			});
+			//			var mySelect = new MobileSelect({
+			//				trigger: '#day',
+			//				title:"请选择日期",
+			//				wheels: [{
+			//						data: ['2018', '2017']
+			//					},
+			//					{
+			//						data: ['1', '2', '3', '4', '5', '6', '','8','9','10','11','12']
+			//					}
+			//				],
+			//				position: [1, 1], //初始化定位 两个轮子都选中在索引1的选项
+			//				callback:function(indexArr, data){
+			//		            console.log(data[0]);
+			//		        }
+			//			});
+			new Mdate("dateShowBtn", {
+				acceptId: "dateSelector",
+				beginYear: "2017",
+				beginMonth: "1",
+				format: "-"
 			});
 		</script>
 	</body>

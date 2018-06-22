@@ -42,14 +42,24 @@
 	margin-left: .2rem;
 	margin-right: .2rem;
 }
-.p-time{
+
+.p-time {
 	padding-left: 15px;
-	font-size:1rem;
+	font-size: 1rem;
 	/*background-color: #4DD0C8;*/
 	margin-bottom: 0rem;
 	/*border-bottom: 1px solid #4DD0C8;*/
 	margin-bottom: 1rem;
 }
+
+.have-num,
+.subscription,
+.sum-money,
+.over-num,
+.profit {
+	color: #D11128;
+}
+
 .img {
 	padding-right: 0px;
 }
@@ -69,9 +79,7 @@ img {
 	color: lightslategrey;
 }
 
-.mp {
-	margin-top: 1.8rem;
-}
+.mp {}
 
 .money {
 	padding-left: .5rem;
@@ -81,6 +89,7 @@ img {
 
 .rightp {
 	padding-right: 0rem;
+	position: relative;
 }
 
 .leftp {
@@ -114,12 +123,16 @@ img {
 .ps {
 	display: inline-block;
 	height: 2.5rem;
-	margin-left: 10%;
+	/*margin-right: 5%;*/
 	line-height: 2.5rem;
 	padding: 0rem .5rem;
 	background-color: #4dd0c8;
 	border-radius: .5rem;
 	font-size: 1rem;
+	position: absolute;
+	right: .5rem;
+	transform: translateY(-50%);
+	top: 50%
 }
 
 #progressbar {
