@@ -1,0 +1,37 @@
+.top {
+	margin-top: 4rem;
+}
+
+.top .div-row {
+	margin-left: 0rem;
+	margin-right: 0rem;
+	background-color: white;
+}
+
+.top .tab {
+	margin-top: 1rem;
+	border: 1px solid #4DD0C8;
+	border-radius: .3rem;
+}
+
+.top .div-row a {
+	display: block;
+	/*background: #4DD0C8;*/
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	color: #4DD0C8;
+}
+
+.top .div-row .tab-a {
+	background-color: #4DD0C8;
+	color: white;
+	border-radius: .3rem;
+}
+
+#myTabContent {
+	margin-top: 6rem;
+}
+
+img {
+	width: 40%;
+}

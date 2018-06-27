@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="">
+		<input type="text" name="" id="" value="" onkeyup="value=value.replace(/[^d]/g,'')"/>
+	</div>
+    <script>
+        var list1 = [{
+                reg: /^([1-9]{1})(\d{14}|\d{18})$/,
+                prompt: "银行卡号格式不正确"
+            },
+            {
+                reg: ^[\u4e00-\u9fa5]{0,}$,
+                prompt: "支行名称不符合"
+            },
+            {
+                reg: /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/,
+                prompt: "身份证格式不正确"
+            },
+            {
+                reg: /^\d{6}$/,
+                prompt: "请输入正确验证码"
+            }
+
+        ];
+		var str = "130627199601121215";
+		console.log((list1[2].reg).test(str))
+    </script>
+</body>
+
+</html>

@@ -46,7 +46,7 @@
 				<div class="col-xs-7">
 					<span id="yue">6月</span>总众筹(元)
 				</div>
-				<div class="col-xs-5 text-right ">
+				<div class="col-xs-5 text-right total">
 					0.00
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 					<span>全国投资用户排名</span>
 				</div>
 				<div class="col-xs-5 text-right">
-					<span>0</span>名
+					<span class="ranking">0</span>名
 				</div>
 			</div>
 			<div class="row sum sum3">
@@ -68,7 +68,7 @@
 					<span class="yue">六月</span>众筹收益(元)
 				</div>
 				<div class="col-xs-5 text-right">
-					<span>0.00</span>
+					<span class="profit">0.00</span>
 				</div>
 			</div>
 			<div class="row sum sum3">
@@ -76,7 +76,7 @@
 					<span class="yue">六月</span>续投奖励(元)
 				</div>
 				<div class="col-xs-5 text-right">
-					<span>0.00</span>
+					<span class="reward">0.00</span>
 				</div>
 			</div>
 			<div class="row sum sum3">
@@ -84,7 +84,7 @@
 					<span class="yue">六月</span>站岗资金补助(元)
 				</div>
 				<div class="col-xs-5 text-right">
-					<span>0.00</span>
+					<span class="subsidy">0.00</span>
 				</div>
 			</div>
 			<div class="row sum sum4">
@@ -92,7 +92,7 @@
 					<span>提现手续费(元)</span>
 				</div>
 				<div class="col-xs-5 text-right">
-					<span>0.00</span>
+					<span class="fee">0.00</span>
 				</div>
 			</div>
 		</div>
@@ -104,29 +104,32 @@
 			</div>
 		</div>
 		<script>
-			
+			var a = 20,
+				b = 50,
+				c = 30;
 			var h_items = new Array();
 			h_items[0] = {
 				"h_title": "车辆",
-				"h_amount": 33,
+				"h_amount": 0,
 				"h_color": "#4dd0c8"
 			}
 			h_items[1] = {
 				"h_title": "房产",
-				"h_amount": 33,
+				"h_amount": 0,
 				"h_color": "#fad680"
 			}
 			h_items[2] = {
 				"h_title": "其他",
-				"h_amount": 33,
+				"h_amount": 0,
 				"h_color": "#f89679"
 			}
+
 			$("#easysector").easysector({
 				"h_items": h_items,
 				"h_title": "Browser Percent",
 				"h_width": '100%',
 				"h_borderColor": "silver",
-				"h_poindlength": 0,
+				"h_poindlength": 2,
 				//"h_showamount": true,
 				"h_backColor": "white",
 				"h_recwidth": 16,

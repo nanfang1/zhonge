@@ -162,7 +162,7 @@
 					$(obj).val(x);
 					recalc();
 				} else {
-					$(obj).val(1);
+					$(obj).val("");
 					$(obj).focus();
 				}
 			},
@@ -179,7 +179,7 @@
 			modify: function(obj) {
 				var x = $(obj).val();
 				if(x < this.min || x > this.max || !this.reg(x)) {
-					$(obj).val(1);
+					$(obj).val("");
 					$(obj).focus();
 				}
 			}
