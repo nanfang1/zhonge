@@ -144,7 +144,7 @@ a.verification {
     padding: .3rem 0rem;
     text-align: center;
     border-radius: .5rem;
-    /*display: none;*/
+    display: none;
     position: relative;
     top: -1rem;
 	filter: alpha(opacity:80);
