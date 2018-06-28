@@ -53,13 +53,13 @@
         }
         
         .border {
-        	border-bottom: 1px solid lightgreen;
+        	border-bottom: 1px solid #4DD0C8;
         }
         /*众筹分类结束*/
         /*分类列表*/
         
         .row1 {
-        	border-bottom: 1px solid #666;
+        	border-bottom: 1px solid #f8f8f8;
         	padding: .5rem 0px;
         	display: block;
         }
