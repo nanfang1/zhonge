@@ -138,12 +138,17 @@ a.verification {
 }
 
 #prompt {
+	font-size: 1rem;
     background-color: #666666;
     color: #E2DFD8;
     padding: .3rem 0rem;
     text-align: center;
     border-radius: .5rem;
-    display: none;
+    /*display: none;*/
     position: relative;
     top: -1rem;
+	filter: alpha(opacity:80);
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
 }

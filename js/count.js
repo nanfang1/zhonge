@@ -160,17 +160,20 @@
 				var x = this.amount(obj, false);
 				if(x >= this.min) {
 					$(obj).val(x);
-					recalc();
 				} else {
 					$(obj).val("");
 					$(obj).focus();
 				}
 			},
 			add: function(obj) {
+				if($(obj).val()==''){
+					var x =1;
+				}else{
+					
 				var x = this.amount(obj, true);
+				}
 				if(x <= this.max) {
 					$(obj).val(x);
-					recalc();
 				} else {
 					$(obj).val(999);
 					$(obj).focus();
@@ -197,3 +200,23 @@
 					pcounts = 999;
 			}
 		};
+		
+		
+		
+//-------------------------------------------------------------------------
+
+
+
+
+		//点击触发加减
+		$(function(){
+			$("#inpl").click(function () {
+				setAmount.reduce('#qty_item_1');
+			});
+			$("#inpr").click(function () {
+				setAmount.add('#qty_item_1');
+			});
+			$("#qty_item_1").keyup(function () {
+				setAmount.modify('#qty_item_1');
+			});
+		})
